@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
     credentials: true,
-    origin: "https://task-client-tau.vercel.app/",
+    origin: "https://task-client-tau.vercel.app",
   })
 );
 
