@@ -22,6 +22,7 @@ app.use(
 
 connection();
 
+app.options("*", cors());
 app.get("/", (req, res) => res.send("Welcome"));
 app.use("/auth", authRoutes);
 app.use("/book", bookRoutes);
