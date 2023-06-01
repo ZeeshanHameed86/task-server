@@ -23,6 +23,7 @@ app.use(
 
 connection();
 
+app.get("/", (req, res) => res.send("Welcome"));
 app.use("/auth", authRoutes);
 app.use("/book", bookRoutes);
 
